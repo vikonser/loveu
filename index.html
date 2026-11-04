@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09070a" />
+    <title>Наша история ♥</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="heartsLayer" aria-hidden="true"></div>
+    <div id="loginScreen">
+      <div class="login-card">
+        <div class="login-symbol">♡</div>
+        <div class="eyebrow">Любовь повсюду</div>
+        <h1>Только <span class="script">для нас</span></h1>
+        <p class="login-subtitle">
+          Маленький мир, в котором живёт наша история.
+        </p>
+        <form id="loginForm">
+          <div class="login-field">
+            <label for="username">Имя</label
+            ><input
+              id="username"
+              name="username"
+              type="text"
+              placeholder="Введи своё имя"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="login-field">
+            <label for="password">Пароль</label
+            ><input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Наш маленький секрет"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+          <button type="submit" class="primary-btn">Открыть наш мир ♥</button>
+          <p
+            class="login-error"
+            id="loginError"
+            role="alert"
+            aria-live="polite"
+          ></p>
+        </form>
+        <div class="login-footer">тихо и по-настоящемк</div>
+      </div>
+    </div>
+    <div id="loveSite">
+      <header class="topbar">
+        <a href="#home" class="logo">сердцем к сердцу <span>♡</span></a
+        ><button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="#home">ГЛАВНАЯ</a><a href="#counter">НАШЕ ВРЕМЯ</a
+          ><a href="#story">ИСТОРИЯ</a><a href="#gallery">ФОТОГРАФИИ</a
+          ><a href="#promises">ОБЕЩАНИЯ</a>
+        </nav>
+      </header>
+      <section class="hero" id="home">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+          <div class="hero-heart">♡</div>
+          <div class="eyebrow">OUR STORY · EST. 27.10.2025</div>
+          <h1>Это больше,<br />чем просто <span>любовь.</span></h1>
+          <p class="hero-description">
+            Среди миллиардов людей наши пути пересеклись. И теперь у нас есть
+            своя маленькая вселенная — со своими моментами, словами, мечтами и
+            воспоминаниями.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#counter">Наша история ♥</a>
+          </div>
+        </div>
+        <div class="scroll-hint">ЛИСТАЙ ВНИЗ ↓</div>
+      </section>
+      <section class="counter-section" id="counter">
+        <div class="eyebrow">иногда счастье пахнет домом</div>
+        <h2 class="script">С того самого дня</h2>
+        <div class="gold-line"></div>
+        <p>
+          27 октября 2025 года — начало нашего отсчёта.<br />Каждая секунда
+          становится частью нашей истории.
+        </p>
+        <div class="counter-grid">
+          <div class="counter-box">
+            <span class="counter-number" id="days">000</span
+            ><span class="counter-label">Дней</span>
+          </div>
+          <div class="counter-box">
+            <span class="counter-number" id="hours">00</span
+            ><span class="counter-label">Часов</span>
+          </div>
+          <div class="counter-box">
+            <span class="counter-number" id="minutes">00</span
+            ><span class="counter-label">Минут</span>
+          </div>
+          <div class="counter-box">
+            <span class="counter-number" id="seconds">00</span
+            ><span class="counter-label">Секунд</span>
+          </div>
+        </div>
+        <p id="dateMessage">И наша история продолжается...</p>
+      </section>
+      <section id="story">
+        <div class="section-heading reveal">
+          <div class="eyebrow"></div>
+          <h2 class="script">Наша маленькая история</h2>
+          <div class="gold-line"></div>
+          <p>
+            Некоторые вещи невозможно описать словами, но можно сохранить в
+            сердце.
+          </p>
+        </div>
+        <div class="story-grid">
+          <article class="story-card reveal">
+            <div class="story-number">01</div>
+            <h3>Начало</h3>
+            <p>
+              Одна встреча, одно сообщение или один взгляд могут изменить целый
+              мир. Так начинается история, которую хочется продолжать.
+            </p>
+          </article>
+          <article class="story-card reveal">
+            <div class="story-number">02</div>
+            <h3>Наши моменты</h3>
+            <p>
+              Разговоры обо всём на свете, глупые шутки, улыбки без причины и
+              минуты, когда больше ничего не нужно.
+            </p>
+          </article>
+          <article class="story-card reveal">
+            <div class="story-number">03</div>
+            <h3>Наше сейчас</h3>
+            <p>
+              Мы продолжаем писать свою историю. Не идеальную, не как в кино, а
+              настоящую — со своими чувствами и мечтами.
+            </p>
+          </article>
+          <article class="story-card reveal">
+            <div class="story-number">04</div>
+            <h3>Маленькие вещи</h3>
+            <p>
+              Сообщение с утра, забота после тяжёлого дня, знакомый голос и
+              чувство, что тебя действительно понимают.
+            </p>
+          </article>
+          <article class="story-card reveal">
+            <div class="story-number">05</div>
+            <h3>Наши мечты</h3>
+            <p>
+              Места, в которых хочется побывать, вечера, которые хочется
+              разделить, и воспоминания, которые ещё только предстоит создать.
+            </p>
+          </article>
+          <article class="story-card reveal">
+            <div class="story-number">06</div>
+            <h3>Продолжение</h3>
+            <p>
+              Самое красивое в нашей истории — то, что следующая страница ещё не
+              написана. И впереди у нас столько всего.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-dark" id="gallery">
+        <div class="section-heading reveal">
+          <div class="eyebrow">FRAGMENTS OF FOREVER</div>
+          <h2 class="script">Моменты, которые хочется оставить</h2>
+          <div class="gold-line"></div>
+          <p>
+            Здесь могут жить наши фотографии, поездки, объятия и обычные дни,
+            ставшие особенными.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <button
+            class="photo-card reveal"
+            type="button"
+            aria-label="Перевернуть карточку: Быть рядом"
+            aria-pressed="false"
+          >
+            <span class="photo-flip-inner"
+              ><span class="photo-front"
+                ><span class="photo-symbol">♡</span
+                ><span class="photo-caption"
+                  ><small>MEMORY 01</small><strong>Быть рядом</strong></span
+                ></span
+              ><span class="photo-back"
+                ><img
+                  loading="lazy"
+                  src="images/cute.jpeg"
+                  alt="Пара обнимается" /></span
+            ></span>
+          </button>
+          <button
+            class="photo-card reveal"
+            type="button"
+            aria-label="Перевернуть карточку: Наше счастье"
+            aria-pressed="false"
+          >
+            <span class="photo-flip-inner"
+              ><span class="photo-front"
+                ><span class="photo-symbol">ღ</span
+                ><span class="photo-caption"
+                  ><small>MEMORY 02</small><strong>Наше счастье</strong></span
+                ></span
+              ><span class="photo-back"
+                ><img
+                  loading="lazy"
+                  src="images/12.jpeg"
+                  alt="Счастливые объятия" /></span
+            ></span>
+          </button>
+          <button
+            class="photo-card reveal"
+            type="button"
+            aria-label="Перевернуть карточку: Тихие вечера"
+            aria-pressed="false"
+          >
+            <span class="photo-flip-inner"
+              ><span class="photo-front"
+                ><span class="photo-symbol">☾</span
+                ><span class="photo-caption"
+                  ><small>MEMORY 03</small><strong>Тихие вечера</strong></span
+                ></span
+              ><span class="photo-back"
+                ><img
+                  loading="lazy"
+                  src="images/moi.jpeg"
+                  alt="Тихий закат" /></span
+            ></span>
+          </button>
+          <button
+            class="photo-card reveal"
+            type="button"
+            aria-label="Перевернуть карточку: Куда глаза глядят"
+            aria-pressed="false"
+          >
+            <span class="photo-flip-inner"
+              ><span class="photo-front"
+                ><span class="photo-symbol">✧</span
+                ><span class="photo-caption"
+                  ><small>MEMORY 04</small
+                  ><strong>Куда глаза глядят</strong></span
+                ></span
+              ><span class="photo-back"
+                ><img
+                  loading="lazy"
+                  src="images/lo.jpeg"
+                  alt="Красивый пейзаж" /></span
+            ></span>
+          </button>
+          <button
+            class="photo-card reveal"
+            type="button"
+            aria-label="Перевернуть карточку: Маленькие радости"
+            aria-pressed="false"
+          >
+            <span class="photo-flip-inner"
+              ><span class="photo-front"
+                ><span class="photo-symbol">∞</span
+                ><span class="photo-caption"
+                  ><small>MEMORY 05</small
+                  ><strong>Маленькие радости</strong></span
+                ></span
+              ><span class="photo-back"
+                ><img
+                  loading="lazy"
+                  src="images/true.jpeg"
+                  alt="Небо и природа" /></span
+            ></span>
+          </button>
+          <button
+            class="photo-card reveal"
+            type="button"
+            aria-label="Перевернуть карточку: Ещё одна глава"
+            aria-pressed="false"
+          >
+            <span class="photo-flip-inner"
+              ><span class="photo-front"
+                ><span class="photo-symbol">♥</span
+                ><span class="photo-caption"
+                  ><small>MEMORY 06</small><strong>Ещё одна глава</strong></span
+                ></span
+              ><span class="photo-back"
+                ><img
+                  loading="lazy"
+                  src="images/ew.JPG"
+                  alt="Вечерний пейзаж" /></span
+            ></span>
+          </button>
+        </div>
+        <p
+          style="
+            text-align: center;
+            color: #b9a8b1;
+            font-size: 10px;
+            margin-top: 25px;
+          "
+        >
+          Нажми на карточку, чтобы увидеть магию.
+        </p>
+      </section>
+      <section class="section-dark" id="feelings-game">
+        <div class="section-heading reveal">
+          <div class="eyebrow">маленькие но важные чувства</div>
+          <h2 class="script">Открой наши чувства</h2>
+          <div class="gold-line"></div>
+          <p></p>
+        </div>
+        <div class="feelings-grid">
+          <button
+            class="feeling-card reveal"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="card-inner"
+              ><span class="card-front"
+                ><span>01</span><b>♥</b><small>НАЖМИ НА МЕНЯ</small></span
+              ><span class="card-back"
+                ><b>Тепло</b
+                ><small
+                  >Иногда одно объятие способно сделать весь мир
+                  спокойнее.</small
+                ></span
+              ></span
+            >
+          </button>
+          <button
+            class="feeling-card reveal"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="card-inner"
+              ><span class="card-front"
+                ><span>02</span><b>☾</b><small>НАЖМИ НА МЕНЯ</small></span
+              ><span class="card-back"
+                ><b>Наши ночи</b
+                ><small
+                  >Самые короткие ночи — те, в которых слишком много
+                  разговоров.</small
+                ></span
+              ></span
+            >
+          </button>
+          <button
+            class="feeling-card reveal"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="card-inner"
+              ><span class="card-front"
+                ><span>03</span><b>✧</b><small>НАЖМИ НА МЕНЯ</small></span
+              ><span class="card-back"
+                ><b>Улыбка</b
+                ><small
+                  >Есть улыбки, которые хочется видеть каждый день.</small
+                ></span
+              ></span
+            >
+          </button>
+          <button
+            class="feeling-card reveal"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="card-inner"
+              ><span class="card-front"
+                ><span>04</span><b>∞</b><small>НАЖМИ НА МЕНЯ</small></span
+              ><span class="card-back"
+                ><b>Будущее</b
+                ><small
+                  >Впереди столько историй, которые мы ещё не успели
+                  прожить.</small
+                ></span
+              ></span
+            >
+          </button>
+          <button
+            class="feeling-card reveal"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="card-inner"
+              ><span class="card-front"
+                ><span>05</span><b>♡</b><small>НАЖМИ НА МЕНЯ</small></span
+              ><span class="card-back"
+                ><b>Забота</b
+                ><small
+                  >Маленькие знаки внимания иногда значат больше больших
+                  слов.</small
+                ></span
+              ></span
+            >
+          </button>
+          <button
+            class="feeling-card reveal"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="card-inner"
+              ><span class="card-front"
+                ><span>06</span><b>*</b><small>НАЖМИ НА МЕНЯ</small></span
+              ><span class="card-back"
+                ><b>Для тебя</b
+                ><small
+                  >Если ты читаешь это, значит, ты уже открыла одну из моих
+                  тайн.</small
+                ></span
+              ></span
+            >
+          </button>
+        </div>
+        <p class="opened-count" id="openedCount" aria-live="polite">
+          Открыто карточек: 0 из 6
+        </p>
+      </section>
+      <section class="section-dark" id="promises">
+        <div class="section-heading reveal">
+          <div class="eyebrow">беречь то, что греет душу</div>
+          <h2 class="script">Маленькие обещания</h2>
+          <div class="gold-line"></div>
+          <p>Нажимай на пункты, которые хочешь сделать частью нашей истории.</p>
+        </div>
+        <div class="promise-list">
+          <button type="button" class="promise-item">
+            <span class="promise-icon">♡</span
+            ><span
+              >Находить время друг для друга, даже когда очень заняты.</span
+            >
+          </button>
+          <button type="button" class="promise-item">
+            <span class="promise-icon">☾</span
+            ><span>Создавать свои маленькие традиции и особенные вечера.</span>
+          </button>
+          <button type="button" class="promise-item">
+            <span class="promise-icon">✧</span
+            ><span
+              >Поддерживать мечты друг друга и верить в наши возможности.</span
+            >
+          </button>
+          <button type="button" class="promise-item">
+            <span class="promise-icon">∞</span
+            ><span
+              >Говорить о чувствах честно, даже если это бывает непросто.</span
+            >
+          </button>
+          <button type="button" class="promise-item">
+            <span class="promise-icon">♥</span
+            ><span
+              >Не забывать, что забота часто живёт в самых простых
+              поступках.</span
+            >
+          </button>
+          <button type="button" class="promise-item">
+            <span class="promise-icon">✧</span
+            ><span>Продолжать нашу историю и собирать новые воспоминания.</span>
+          </button>
+        </div>
+        <p class="promise-progress" id="promiseProgress" aria-live="polite">
+          Отмечено обещаний: 0 из 6
+        </p>
+      </section>
+      <section id="mood">
+        <div class="section-heading reveal">
+          <div class="eyebrow">все будет хорошо, когда мы рядом</div>
+          <h2 class="script">Что у тебя на душе?</h2>
+          <div class="gold-line"></div>
+          <p>
+            Выбери настроение — и пусть этот маленький уголок ответит тебе
+            чем-то тёплым.
+          </p>
+        </div>
+        <div class="interactive-panel reveal">
+          <h3>Сегодня я...</h3>
+          <p>Иногда достаточно одного предложения, чтобы стало чуть светлее.</p>
+          <div class="mood-buttons">
+            <button type="button" class="mood-btn" data-mood="happy">
+              Счастлив</button
+            ><button type="button" class="mood-btn" data-mood="sad">
+              Грущу</button
+            ><button type="button" class="mood-btn" data-mood="tired">
+              Устал</button
+            ><button type="button" class="mood-btn" data-mood="love">
+              Влюблен</button
+            ><button type="button" class="mood-btn" data-mood="miss">
+              Скучаю
+            </button>
+          </div>
+          <div class="mood-result" id="moodResult" aria-live="polite">
+            Выбери то, что ближе твоему сердцу.
+          </div>
+        </div>
+      </section>
+      <section class="section-dark" id="memory">
+        <div class="section-heading reveal">
+          <div class="eyebrow">там, где спокойно, там и дом</div>
+          <h2 class="script">Напоминание для тебя</h2>
+          <div class="gold-line"></div>
+          <p>
+            Иногда нужно услышать именно те слова, которые забываешь сказать
+            себе.
+          </p>
+        </div>
+        <div class="memory-box reveal">
+          <div class="big-symbol">✧</div>
+          <h3>Маленькая записка</h3>
+          <p>Нажми на кнопку. Для тебя найдётся одно тёплое послание.</p>
+          <button type="button" class="primary-btn" id="memoryButton">
+            Открыть записку ♡
+          </button>
+          <div class="memory-result" id="memoryResult" aria-live="polite"></div>
+        </div>
+      </section>
+      <section class="final-section" id="forever">
+        <div class="hero-heart">♡</div>
+        <div class="eyebrow">TO BE CONTINUED...</div>
+        <h2>Это наша история.<br /><span>И она продолжается.</span></h2>
+        <div class="gold-line"></div>
+        <p>
+          Когда-нибудь мы откроем эту страницу снова, посмотрим на фотографии и
+          улыбнёмся тому, сколько прекрасного успели прожить.
+        </p>
+        <button type="button" class="primary-btn" id="surpriseButton">
+          Маленький сюрприз ♥
+        </button>
+        <p
+          id="surpriseMessage"
+          aria-live="polite"
+          style="margin-top: 20px; color: #f0bfd0"
+        ></p>
+      </section>
+      <footer>
+        нежность <span>♥</span> без повода
+        <div style="margin-top: 8px; letter-spacing: 1px">
+          27.10.2025 — ALWAYS IN OUR STORY
+        </div>
+      </footer>
+    </div>
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Просмотр фотографии"
+    >
+      <button
+        class="lightbox-close"
+        id="lightboxClose"
+        type="button"
+        aria-label="Закрыть"
+      >
+        ×</button
+      ><img id="lightboxImage" src="" alt="Увеличенная фотография" />
+    </div>
+    <button
+      class="back-to-top"
+      id="backToTop"
+      type="button"
+      aria-label="Наверх"
+    >
+      ↑
+    </button>
+    <script src="js/script.js"></script>
+  </body>
+</html>
